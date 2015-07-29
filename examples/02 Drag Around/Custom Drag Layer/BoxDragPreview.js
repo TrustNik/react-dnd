@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import shouldPureComponentUpdate from './shouldPureComponentUpdate';
-import Box from './Box';
+import DraggableBox from './DraggableBox.js';
 
 const styles = {
   display: 'inline-block',
@@ -43,7 +43,7 @@ export default class BoxDragPreview extends Component {
 
     return (
       <div style={styles}>
-        <Box title={title}
+        <DraggableBox title={title}
              yellow={tickTock} />
       </div>
     );
